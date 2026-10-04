@@ -1,0 +1,91 @@
+{
+  "bundle_kind": "map",
+  "title": "Alabama’s county-level presidential realignment, 1992–2024",
+  "claim": "Maps the first durable Republican presidential win in each county during 1992–2024.",
+  "data": {
+    "source": "Alabama Secretary of State precinct returns",
+    "vintage": "1992–2024",
+    "variable": "first Republican county win followed by uninterrupted Republican wins",
+    "unit": "election year",
+    "denominator": "two-party winner"
+  },
+  "geometry": {
+    "source": "alabama/data/geospatial/election-precincts/al-2024-gen-prec/al-2024-gen-all-prec/al-2024-gen-all-prec.shp",
+    "vintage": "2024",
+    "unit": "county",
+    "join_key": "county name",
+    "crs": "EPSG:32616"
+  },
+  "classification": {
+    "method": "categorical election cycle",
+    "center": null,
+    "breaks": [
+      1992,
+      1996,
+      2000,
+      2004,
+      2008,
+      2012,
+      2016,
+      2020,
+      2024
+    ],
+    "clip": null
+  },
+  "style": {
+    "palette": {
+      "Republican throughout": "#6f1d1b",
+      "1996": "#8f2d21",
+      "2000": "#b5472e",
+      "2004": "#d36b42",
+      "2008": "#e68a58",
+      "2012": "#eda66f",
+      "2016": "#f1bd88",
+      "2020": "#f4d1a6",
+      "2024": "#f7e4c8",
+      "Not Republican by 2024": "#315a86",
+      "Incomplete record": "#c8c5bf"
+    },
+    "missing_color": "#c8c5bf",
+    "line_widths": {
+      "county": 0.32,
+      "state": 1.25
+    },
+    "font_family": "Source Serif 4",
+    "font_sizes": {
+      "title": 25,
+      "subtitle": 12.5,
+      "county": 6.7,
+      "notes": 8.2
+    }
+  },
+  "layout": {
+    "width": 16,
+    "height": 10,
+    "extent": [
+      360678.932190001,
+      3335262.4314099997,
+      698921.7709399994,
+      3874594.45059
+    ],
+    "insets": []
+  },
+  "context_layers": [],
+  "outputs": [
+    "alabama-presidential-realignment-1992-2024.png"
+  ],
+  "qa": {
+    "county_count": 67,
+    "invalid_geometries": 0,
+    "unmatched_counties": 0,
+    "source_file_count": 438,
+    "geometry_sha256": "3376d310897e007aee63887706167d04f72ec09a3fda45daafbfecaa0db0d665"
+  },
+  "software_versions": {
+    "geopandas": "1.1.4",
+    "pandas": "3.0.5",
+    "matplotlib": "3.10.5"
+  },
+  "canonical_format": "png",
+  "portfolio_note": "Curated publication subset. Original analysis metadata retained; source inputs and other exports excluded."
+}

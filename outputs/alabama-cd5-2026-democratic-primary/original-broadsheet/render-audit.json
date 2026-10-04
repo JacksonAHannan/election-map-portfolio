@@ -1,0 +1,37 @@
+{
+  "first-round": {
+    "source_rows": 207,
+    "accepted_source_rows": 207,
+    "mapped_reporting_geometries": 207,
+    "voting_reporting_geometries": 207,
+    "mapped_vote_total": 45043,
+    "official_vote_total": 45954,
+    "tied_reporting_geometries": 17,
+    "unclassified_voting_geometries": 0,
+    "candidate_columns": [
+      "Andrew Sneed",
+      "Candice Dollar Duvieilh",
+      "Jeremy Devito"
+    ],
+    "result_sha256": "a08bf37c870128bcc2acdcb4611708eb8c50bdda5e2a68ce02ce0c0754d049eb",
+    "png": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-first-round-broadsheet.png",
+    "svg": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-first-round-broadsheet.svg"
+  },
+  "runoff": {
+    "source_rows": 207,
+    "accepted_source_rows": 202,
+    "mapped_reporting_geometries": 207,
+    "voting_reporting_geometries": 202,
+    "mapped_vote_total": 20835,
+    "official_vote_total": 21295,
+    "tied_reporting_geometries": 8,
+    "unclassified_voting_geometries": 0,
+    "candidate_columns": [
+      "Andrew Sneed",
+      "Candice Dollar Duvieilh"
+    ],
+    "result_sha256": "392c29b1f41dd3cb7f60780950de3c198c09837a67eccf6cb5e1ad3b1cf27672",
+    "png": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.png",
+    "svg": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.svg"
+  }
+}

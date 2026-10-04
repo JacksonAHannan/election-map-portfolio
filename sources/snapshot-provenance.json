@@ -1,0 +1,163 @@
+{
+  "snapshot_date": "2026-10-03",
+  "source_project": "Election-Maps",
+  "source_state": "working tree; selected files copied without Git history",
+  "scope": "Code, aggregate map renders and audit metadata only. Source inputs are excluded.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "original_sha256": "54af9e2650af0079c8c04ddcc9a38fdb4d3aa0acc6bfd1b47d93a5b67ae79a75",
+      "original_bytes": 1083
+    },
+    {
+      "path": "scripts/create-alabama-2016-2024-presidential-swing-map.py",
+      "original_sha256": "f8e82cd27aec2cfc958f847be49e6ff7e2683e210066a04cde86c3726ea08708",
+      "original_bytes": 17886
+    },
+    {
+      "path": "scripts/create-tennessee-2016-2024-presidential-swing-map.py",
+      "original_sha256": "64d1c82b201e8271807a243f89c241aa4c2c9fe5349481b728321cb36fe017b5",
+      "original_bytes": 20848
+    },
+    {
+      "path": "scripts/create-alabama-2017-senate-special-election-map.py",
+      "original_sha256": "56256f047c0283630bdb502554ecb21daa6af361dc741fa09fff9ea1da7f8fd3",
+      "original_bytes": 10801
+    },
+    {
+      "path": "scripts/create-alabama-1992-2024-realignment-map.py",
+      "original_sha256": "425d46b11b455a2cf148a73d009e3b1cf983b063035706197dd1b354913c3a4c",
+      "original_bytes": 19241
+    },
+    {
+      "path": "scripts/create-alabama-cd5-2026-original-maps.py",
+      "original_sha256": "aadfdf5f87c44d238a317476835a44178ae59f79816d64d4f2b2c94832b2e246",
+      "original_bytes": 14775
+    },
+    {
+      "path": "election_maps/__init__.py",
+      "original_sha256": "c0607d5b979f4f98f3bdd5122ec64135e429e7bd67c603d8d6729bd251a5aaf8",
+      "original_bytes": 118
+    },
+    {
+      "path": "election_maps/invariants.py",
+      "original_sha256": "c765433038b5b49e4cd04818fa30b2b3837c7bc1a75d70038afb6edaf2939256",
+      "original_bytes": 1728
+    },
+    {
+      "path": "election_maps/cartography.py",
+      "original_sha256": "1f1ba1f26c2d25cf2f4d2e5377c2dead00d9882e79ea3f169c9ec09bb7bbf135",
+      "original_bytes": 1055
+    },
+    {
+      "path": "election_maps/output_contract.py",
+      "original_sha256": "df109803e635e522d6993310fe43ec567d3528bed18bcf579671d58f0581e688",
+      "original_bytes": 11481
+    },
+    {
+      "path": "tests/test_invariants.py",
+      "original_sha256": "bf85d178848fdb5687676a44cc11a1aa94db191d18cfc8a9eb38e5c0abc4ba7c",
+      "original_bytes": 836
+    },
+    {
+      "path": "tests/test_cartography.py",
+      "original_sha256": "f8d9eb11503ea22ebfdf5cf74e8382920d29ddeae4cb2ecb1807099767e33c2e",
+      "original_bytes": 551
+    },
+    {
+      "path": "tests/test_output_contract.py",
+      "original_sha256": "79021e33b1ef9e6675d657b84a8637b4d621de86796f6b676b8d44d7d9f83ae9",
+      "original_bytes": 5584
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-2016-2024.png",
+      "original_sha256": "ee481d5127572fd5796df7239e2ea2fa62f6c402dcaa36f584d8a1f02b780921",
+      "original_bytes": 1260696
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-crosswalk-quality.png",
+      "original_sha256": "d0a5889c980f4539808df17d3e0095def9e0be2fc9bf7015fd4aa8b823cbb719",
+      "original_bytes": 1237899
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png",
+      "original_sha256": "788f48d5539d90a569e69e40ae60470014ed0b87acfd3e82fda652eb879f0898",
+      "original_bytes": 1577030
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png",
+      "original_sha256": "f7962bde494e35ce8529877fe27bc3d00dd1f5404348d3723c90a0e7d9a671f8",
+      "original_bytes": 1938892
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/alabama-presidential-realignment-1992-2024.png",
+      "original_sha256": "b89efb9d39d46625eeaffccd7e98621ecf24f34be630af43cdb564ed8d7e4c74",
+      "original_bytes": 606635
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.png",
+      "original_sha256": "5ffc575d754d3d509eb34c2780af97d8ae211ad253963c5fe9cd694e7009dd4b",
+      "original_bytes": 698416
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/README.md",
+      "original_sha256": "014d264eaaf039f4d39cd73bae8607d8279aad200793188985d1cb34e18b9899",
+      "original_bytes": 3123
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/map_spec.json",
+      "original_sha256": "ab6f817e9e95503a484974f2e314ab9648102c3d3e053009565726b1ae25ca6c",
+      "original_bytes": 434
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/crosswalk-audit.json",
+      "original_sha256": "a2c06cb939916fa7f7fc1acbbcef75f0a6114d4f1e815a7857ec71a2223394b3",
+      "original_bytes": 567
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/README.md",
+      "original_sha256": "487e1bcf9055e4e40a8ad10b5337a9b8212944f38977418267470288e3e835a0",
+      "original_bytes": 1297
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/map_spec.json",
+      "original_sha256": "43837e04c0d8ea789e008df3f3e758a198b01732d4d7fdaca625b5c217b1a84b",
+      "original_bytes": 3328
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/crosswalk-audit.json",
+      "original_sha256": "6078f5bcfc8dc6c048c1e9024bab37074fdf7f5bbecbef63b780e2ce2e78d905",
+      "original_bytes": 790
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/README.md",
+      "original_sha256": "0ce61085f9713d53fc5d884ce37afec01812249c1f16c616a4cc9e4ff8d693ea",
+      "original_bytes": 1190
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/map_spec.json",
+      "original_sha256": "cf873e960758a6e1f0a69a0d72043e4e8f02a2f7ed469bd1be9b5e3a88b6fef6",
+      "original_bytes": 2893
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/README.md",
+      "original_sha256": "386c2fbef80f752f6e2f1e041251474b992ad7184b236cd3c6b2015f99051aba",
+      "original_bytes": 505
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/map_spec.json",
+      "original_sha256": "f34426f8dfb2ae956cf127ab4ed1333393e2354d9de620a222c29ffb48b0d2f0",
+      "original_bytes": 2392
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/README.md",
+      "original_sha256": "5d1aee84d135a44babbde33a3a943652419cea5b940d991d0d5659c7d6f41d4c",
+      "original_bytes": 540
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/render-audit.json",
+      "original_sha256": "234660a26e23c9242701be54aa697892d144e956c078a4f6c82f33fe2f22f29b",
+      "original_bytes": 1504
+    }
+  ]
+}

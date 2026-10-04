@@ -1,0 +1,142 @@
+{
+  "bundle_kind": "map",
+  "title": "2017 Alabama U.S. Senate special election margin by precinct",
+  "claim": "Show the two-candidate geographic margin between Doug Jones and Roy Moore.",
+  "data": {
+    "source": "alabama/data/geospatial/election-precincts/al-vest-17.zip",
+    "vintage": "2017-12-12",
+    "variable": "100 * (Jones - Moore) / (Jones + Moore)",
+    "unit": "percentage-point margin",
+    "denominator": "Jones plus Moore votes",
+    "votes": {
+      "jones": 673889,
+      "moore": 651983,
+      "write_in_excluded": 22877
+    }
+  },
+  "geometry": {
+    "source": "alabama/data/geospatial/election-precincts/al-vest-17.zip",
+    "vintage": "2017 precinct",
+    "unit": "precinct/VTD",
+    "join_key": "embedded VEST returns",
+    "crs": "EPSG:5070",
+    "features": 1996,
+    "valid_features": 1996,
+    "features_repaired_after_projection": 30,
+    "render_simplification_metres": 10
+  },
+  "classification": {
+    "method": "fixed diverging",
+    "center": 0,
+    "breaks": [
+      -100,
+      -95,
+      -90,
+      -85,
+      -80,
+      -75,
+      -70,
+      -65,
+      -60,
+      -55,
+      -50,
+      -45,
+      -40,
+      -35,
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100
+    ],
+    "clip": [
+      -100,
+      100
+    ],
+    "neutral_class": false,
+    "missing_features": 1
+  },
+  "style": {
+    "missing_color": "#AAA9A3",
+    "font_family": "Nimbus Roman; Nimbus Sans Narrow",
+    "line_widths": {
+      "precinct": 0.15,
+      "county": 0.42,
+      "state": 1.25
+    }
+  },
+  "layout": {
+    "width_inches": 14,
+    "height_inches": 12,
+    "metro_windows": [
+      {
+        "name": "HUNTSVILLE",
+        "center": [
+          853709.4120570056,
+          1338959.0821206633
+        ],
+        "width_m": 70000,
+        "height_m": 40000
+      },
+      {
+        "name": "BIRMINGHAM",
+        "center": [
+          847212.7510351109,
+          1202457.0846287159
+        ],
+        "width_m": 70000,
+        "height_m": 40000
+      },
+      {
+        "name": "MONTGOMERY",
+        "center": [
+          906339.3865537348,
+          1080173.1192064479
+        ],
+        "width_m": 70000,
+        "height_m": 40000
+      },
+      {
+        "name": "MOBILE",
+        "center": [
+          759553.6778972509,
+          878419.4396307843
+        ],
+        "width_m": 70000,
+        "height_m": 40000
+      }
+    ]
+  },
+  "outputs": [
+    "alabama-2017-senate-special-election-margin-by-precinct.png"
+  ],
+  "software_versions": {
+    "geopandas": "1.1.4",
+    "pandas": "3.0.5",
+    "matplotlib": "3.10.5"
+  },
+  "canonical_format": "png",
+  "portfolio_note": "Curated publication subset. Original analysis metadata retained; source inputs and other exports excluded."
+}

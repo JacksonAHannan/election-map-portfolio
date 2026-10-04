@@ -1,0 +1,22 @@
+{
+  "source_2016_precincts": 2000,
+  "target_2024_precincts": 1947,
+  "crosswalk_rows": 2565,
+  "weight_sum_min": 0.9999999999999999,
+  "weight_sum_max": 1.0,
+  "maximum_county_vote_error": 0.0,
+  "quality_counts": {
+    "Exact geometry": 1398,
+    "Complex change": 333,
+    "Split allocation": 175,
+    "Merged precincts": 41
+  },
+  "allocation_method_counts": {
+    "exact_geometry": 1398,
+    "2020_block_vap": 1167
+  },
+  "statewide_2016_clinton": 729607,
+  "statewide_2016_trump": 1318629,
+  "statewide_2024_harris": 772412,
+  "statewide_2024_trump": 1462616
+}

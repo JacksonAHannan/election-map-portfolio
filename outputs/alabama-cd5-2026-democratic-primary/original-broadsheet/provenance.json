@@ -1,0 +1,20 @@
+{
+  "bundle_kind": "map",
+  "snapshot_date": "2026-10-03",
+  "original_generated_at": null,
+  "script": "scripts/create-alabama-cd5-2026-original-maps.py",
+  "source_inputs_included": false,
+  "evidence": "Existing saved render and original analysis metadata; not rebuilt for this snapshot",
+  "attribution_file": "../../../docs/DATA_SOURCES.md",
+  "source_data": {
+    "status": "external",
+    "citation": "Alabama Secretary of State; reviewed precinct-result tables"
+  },
+  "geometry_data": {
+    "status": "external",
+    "citation": "Derived 2026 reporting geometry on 2024 base"
+  },
+  "rdh_credit": "This map was created using data from the Redistricting Data Hub.",
+  "rdh_terms": "https://redistrictingdatahub.org/terms-and-conditions/",
+  "usage": "Noncommercial, nonpartisan analytical portfolio; input terms apply"
+}

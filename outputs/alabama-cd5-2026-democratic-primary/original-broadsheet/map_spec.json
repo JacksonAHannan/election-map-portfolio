@@ -1,0 +1,16 @@
+{
+  "bundle_kind": "map",
+  "title": "Alabama CD5 Democratic runoff: original broadsheet",
+  "data": {
+    "source": "Alabama Secretary of State; reviewed precinct-result tables"
+  },
+  "geometry": {
+    "source": "Derived 2026 reporting geometry on 2024 base",
+    "limitation": "Reconstructed reporting geography; not certified election boundaries"
+  },
+  "canonical_format": "png",
+  "outputs": [
+    "alabama-cd5-2026-democratic-runoff-broadsheet.png"
+  ],
+  "portfolio_note": "Curated publication subset. Original analysis metadata retained; source inputs and other exports excluded."
+}

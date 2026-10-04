@@ -1,0 +1,20 @@
+{
+  "bundle_kind": "map",
+  "snapshot_date": "2026-10-03",
+  "original_generated_at": null,
+  "script": "scripts/create-alabama-2016-2024-presidential-swing-map.py",
+  "source_inputs_included": false,
+  "evidence": "Existing saved render and original analysis metadata; not rebuilt for this snapshot",
+  "attribution_file": "../../docs/DATA_SOURCES.md",
+  "source_data": {
+    "status": "external",
+    "citation": "VEST/RDH precinct results and Census block voting-age population"
+  },
+  "geometry_data": {
+    "status": "external",
+    "citation": "VEST/RDH 2016 and 2024 precinct geography"
+  },
+  "rdh_credit": "This map was created using data from the Redistricting Data Hub.",
+  "rdh_terms": "https://redistrictingdatahub.org/terms-and-conditions/",
+  "usage": "Noncommercial, nonpartisan analytical portfolio; input terms apply"
+}

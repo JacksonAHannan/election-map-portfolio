@@ -1,0 +1,5 @@
+path,role,media_type,sha256
+README.md,documentation,text/markdown,7ff3df1e1b3181d5370c9988be07ab98540e51b1b80448c133aec12aee1ee4da
+alabama-2017-senate-special-election-margin-by-precinct.png,output,image/png,f7962bde494e35ce8529877fe27bc3d00dd1f5404348d3723c90a0e7d9a671f8
+map_spec.json,metadata,application/json,8d2cbbd4ac7b0d1a44e37ae467a91c53cfaf5e52ab214ce3399c6c478b145a53
+provenance.json,metadata,application/json,5627d943adf89e435e69b4ff71aa3734b57c3d3c2dac9aa0e17eadde0b7700e0

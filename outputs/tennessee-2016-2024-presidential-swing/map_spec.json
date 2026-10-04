@@ -1,0 +1,112 @@
+{
+  "bundle_kind": "map",
+  "title": "Tennessee Presidential Shift by Precinct, 2016–2024",
+  "claim": "Show the change in Democratic two-party presidential vote share on 2024 precinct boundaries.",
+  "data": {
+    "source_2016": "VEST/RDH Tennessee 2016 precinct and election results",
+    "source_2024": "RDH Tennessee 2024 general election precinct results and boundaries; Tennessee Secretary of State results",
+    "variable": "2024 Harris two-party share minus 2016 Clinton two-party share",
+    "unit": "percentage-point Democratic shift",
+    "denominator": "Democratic plus Republican presidential votes"
+  },
+  "geometry": {
+    "source": "tennessee/data/tn_2024_gen_prec/tn_2024_gen_all_prec/tn_2024_gen_all_prec.shp",
+    "vintage": "2024 general-election reporting precincts",
+    "unit": "precinct",
+    "join_key": "2024 UNIQUE_ID; 2016 votes transferred by spatial crosswalk",
+    "crs": "EPSG:5070 analysis; source output reprojected to EPSG:4326",
+    "source_2016_sha256": "23a611f0e436d7aba8fce14f200ee20a4bfea4e4a31d55406fd3b6869d9c1a09",
+    "source_2024_sha256": "79a76648ee3a269cdf27e3746b87f5b303c3a68a369c1ff53d3333e07f5b1136"
+  },
+  "classification": {
+    "method": "fixed diverging",
+    "center": 0,
+    "breaks": [
+      -30,
+      -25,
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "clip": [
+      -30,
+      30
+    ]
+  },
+  "style": {
+    "palette": [
+      "#6D1E24",
+      "#8D2F34",
+      "#AD4547",
+      "#C76360",
+      "#DB8982",
+      "#E8B4AA",
+      "#B5CBE0",
+      "#8DAFCE",
+      "#6693BB",
+      "#4277A4",
+      "#285D8A",
+      "#17436B"
+    ],
+    "missing_color": "#AAA9A3",
+    "font_family": "Nimbus Roman; Nimbus Sans Narrow"
+  },
+  "layout": {
+    "width_inches": 14,
+    "height_inches": 10,
+    "extent": "Tennessee",
+    "insets": [
+      "Nashville–Murfreesboro, 132 km by 84 km",
+      "gold Tennessee silhouette in title tab"
+    ]
+  },
+  "context_layers": [
+    "county boundaries",
+    "state boundary",
+    "metro locator rectangle"
+  ],
+  "outputs": [
+    "tennessee-presidential-shift-2016-2024.png"
+  ],
+  "software_versions": {
+    "geopandas": "1.1.4",
+    "pandas": "3.0.5",
+    "matplotlib": "3.10.5"
+  },
+  "audit_summary": {
+    "source_2016_precincts": 1985,
+    "target_2024_precincts": 1862,
+    "crosswalk_rows": 4164,
+    "weight_sum_min": 0.9999999999999999,
+    "weight_sum_max": 1.0,
+    "maximum_county_vote_error": 0.0,
+    "quality_counts": {
+      "Complex change": 1110,
+      "Exact geometry": 454,
+      "Split allocation": 276,
+      "Merged precincts": 22
+    },
+    "allocation_method_counts": {
+      "2020_block_vap": 3695,
+      "exact_geometry": 454,
+      "polygon_area_fallback": 15
+    },
+    "statewide_2016_clinton": 870695,
+    "statewide_2016_trump": 1522925,
+    "statewide_2024_harris": 1056265,
+    "statewide_2024_trump": 1966865,
+    "statewide_democratic_two_party_share_2016": 0.3637565695473801,
+    "statewide_democratic_two_party_share_2024": 0.34939450172503334,
+    "statewide_democratic_shift_pp": -1.436206782234678
+  },
+  "canonical_format": "png",
+  "portfolio_note": "Curated publication subset. Original analysis metadata retained; source inputs and other exports excluded."
+}

@@ -1,0 +1,10 @@
+{
+  "bundle_kind": "map",
+  "canonical_format": "png",
+  "title": "Alabama 2016 2024 Presidential Swing",
+  "outputs": [
+    "alabama-presidential-swing-2016-2024.png",
+    "alabama-presidential-swing-crosswalk-quality.png"
+  ],
+  "portfolio_note": "Curated publication subset. Original analysis metadata retained; source inputs and other exports excluded."
+}

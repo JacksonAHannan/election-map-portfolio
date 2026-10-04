@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-03",
+  "hash_algorithm": "sha256",
+  "scope": "Complete curated publication set; excludes environment, caches and this manifest itself",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 390,
+      "sha256": "544e8d964764c6d42783e302cc928a2cce2f78e426a88c35e2ab4a8f6490a48a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "54af9e2650af0079c8c04ddcc9a38fdb4d3aa0acc6bfd1b47d93a5b67ae79a75"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6823,
+      "sha256": "3d1b6b9aa609303f318960fcf5c2c39e052d0d2955f6eed0ac1945265dc35bd0"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "bytes": 5557,
+      "sha256": "a7ab15a3a174be0d43459c723b947c09290ef920f843ca94cff4c7c09d904ef9"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "bytes": 4057,
+      "sha256": "9a18abba41b89d025ade9a0e25b3359df86506ce3968c69987ec28975c3dab0d"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 1904,
+      "sha256": "8f0d211310b5e544d254d3089b11498af25d75aafe01424d840f463569ced8d0"
+    },
+    {
+      "path": "election_maps/__init__.py",
+      "bytes": 118,
+      "sha256": "c0607d5b979f4f98f3bdd5122ec64135e429e7bd67c603d8d6729bd251a5aaf8"
+    },
+    {
+      "path": "election_maps/cartography.py",
+      "bytes": 1055,
+      "sha256": "1f1ba1f26c2d25cf2f4d2e5377c2dead00d9882e79ea3f169c9ec09bb7bbf135"
+    },
+    {
+      "path": "election_maps/invariants.py",
+      "bytes": 1728,
+      "sha256": "c765433038b5b49e4cd04818fa30b2b3837c7bc1a75d70038afb6edaf2939256"
+    },
+    {
+      "path": "election_maps/output_contract.py",
+      "bytes": 11481,
+      "sha256": "df109803e635e522d6993310fe43ec567d3528bed18bcf579671d58f0581e688"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5132,
+      "sha256": "fa11efb1b873e25c730de54b742fb7fd348858c7b249a2a8ada05b6274abe3cb"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/README.md",
+      "bytes": 660,
+      "sha256": "d0de5be870a5fcbc867eca3ff5a1f729547a847b2572d6e4d8eda7b41a9363c5"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/alabama-presidential-realignment-1992-2024.png",
+      "bytes": 606635,
+      "sha256": "b89efb9d39d46625eeaffccd7e98621ecf24f34be630af43cdb564ed8d7e4c74"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/manifest.csv",
+      "bytes": 477,
+      "sha256": "2bef478b99bd8e573ebe972ed539e670237b8950ff0fcd599f2f50dad2505a02"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/map_spec.json",
+      "bytes": 2330,
+      "sha256": "273b7e3ebecc195da07b212d819e41d60556b4aecfef2d49a0bfbfa6ae478653"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/provenance.json",
+      "bytes": 874,
+      "sha256": "b34853c21b753584e8a7d65630abdacac50583c2495a4afa3a503f0176e90bc6"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/README.md",
+      "bytes": 3283,
+      "sha256": "25f57266ab1bfc3d456f2e6d67edb9b887abfd094f946182200ec6649e3468de"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-2016-2024.png",
+      "bytes": 1260696,
+      "sha256": "ee481d5127572fd5796df7239e2ea2fa62f6c402dcaa36f584d8a1f02b780921"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-crosswalk-quality.png",
+      "bytes": 1237899,
+      "sha256": "d0a5889c980f4539808df17d3e0095def9e0be2fc9bf7015fd4aa8b823cbb719"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/crosswalk-audit.json",
+      "bytes": 567,
+      "sha256": "a2c06cb939916fa7f7fc1acbbcef75f0a6114d4f1e815a7857ec71a2223394b3"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/manifest.csv",
+      "bytes": 713,
+      "sha256": "d0ec2b7ce52b0f183fa628041056bbe6324580d8f310cc4d7d92989d4ccb487a"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/map_spec.json",
+      "bytes": 360,
+      "sha256": "c203943934a3ac66569ed5d6b114f6585818f094d221b0a9cdf0d945d4677afc"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/provenance.json",
+      "bytes": 838,
+      "sha256": "0ce8cc3b86a853be4c5c7c81449bf023bfaaa9f20b10da6a0190370396dad45b"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/README.md",
+      "bytes": 1454,
+      "sha256": "7ff3df1e1b3181d5370c9988be07ab98540e51b1b80448c133aec12aee1ee4da"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png",
+      "bytes": 1938892,
+      "sha256": "f7962bde494e35ce8529877fe27bc3d00dd1f5404348d3723c90a0e7d9a671f8"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/manifest.csv",
+      "bytes": 490,
+      "sha256": "50f16de67d793c4b526620c6ce01bd3529cfa261be751ad7e3af12e3fa092577"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/map_spec.json",
+      "bytes": 2928,
+      "sha256": "8d2cbbd4ac7b0d1a44e37ae467a91c53cfaf5e52ab214ce3399c6c478b145a53"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/provenance.json",
+      "bytes": 847,
+      "sha256": "5627d943adf89e435e69b4ff71aa3734b57c3d3c2dac9aa0e17eadde0b7700e0"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/README.md",
+      "bytes": 944,
+      "sha256": "2da641a340b55c0d0c23a11bf2a77f76e9fc346796e3e9fed4f9f2a4c426c7ca"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.png",
+      "bytes": 698416,
+      "sha256": "5ffc575d754d3d509eb34c2780af97d8ae211ad253963c5fe9cd694e7009dd4b"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/manifest.csv",
+      "bytes": 587,
+      "sha256": "d529b24cd068d5387d42d99dcab988fcbd1b99836a0cb12cab2638dbf6a82568"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/map_spec.json",
+      "bytes": 592,
+      "sha256": "446f25297c704e1fb11ae917ae9f86614743896af8089965119ed8d0ca7fe439"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/provenance.json",
+      "bytes": 829,
+      "sha256": "b433b6d86d4cc27325975ee223045f4891eb3c951afa64af15a33072ce4e1331"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/render-audit.json",
+      "bytes": 1504,
+      "sha256": "234660a26e23c9242701be54aa697892d144e956c078a4f6c82f33fe2f22f29b"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/README.md",
+      "bytes": 1561,
+      "sha256": "7480329ea0e0295272571bee765d78c282c907ab936e2ddc4dc19a4cf082586a"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/crosswalk-audit.json",
+      "bytes": 790,
+      "sha256": "6078f5bcfc8dc6c048c1e9024bab37074fdf7f5bbecbef63b780e2ce2e78d905"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/manifest.csv",
+      "bytes": 583,
+      "sha256": "229da41a164a6522ce37c42bfcd379bdb43026d4e61d5dcbc7770352dd1797c9"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/map_spec.json",
+      "bytes": 3276,
+      "sha256": "f20f9a8a27f8a70ea76453aa8be6c54e48c8f08f6a25232842466760fa8333c7"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/provenance.json",
+      "bytes": 865,
+      "sha256": "198e7c0d4f6cd4607906f03d64985ec41254c5f9e645c97057678169f343df4a"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png",
+      "bytes": 1577030,
+      "sha256": "788f48d5539d90a569e69e40ae60470014ed0b87acfd3e82fda652eb879f0898"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 601,
+      "sha256": "93a3764bf0136246227f49a02206bb3e5a9a6becfc88d4e7b7ef02d37aec3306"
+    },
+    {
+      "path": "scripts/create-alabama-1992-2024-realignment-map.py",
+      "bytes": 19241,
+      "sha256": "425d46b11b455a2cf148a73d009e3b1cf983b063035706197dd1b354913c3a4c"
+    },
+    {
+      "path": "scripts/create-alabama-2016-2024-presidential-swing-map.py",
+      "bytes": 17886,
+      "sha256": "f8e82cd27aec2cfc958f847be49e6ff7e2683e210066a04cde86c3726ea08708"
+    },
+    {
+      "path": "scripts/create-alabama-2017-senate-special-election-map.py",
+      "bytes": 10801,
+      "sha256": "56256f047c0283630bdb502554ecb21daa6af361dc741fa09fff9ea1da7f8fd3"
+    },
+    {
+      "path": "scripts/create-alabama-cd5-2026-original-maps.py",
+      "bytes": 14775,
+      "sha256": "aadfdf5f87c44d238a317476835a44178ae59f79816d64d4f2b2c94832b2e246"
+    },
+    {
+      "path": "scripts/create-tennessee-2016-2024-presidential-swing-map.py",
+      "bytes": 20848,
+      "sha256": "64d1c82b201e8271807a243f89c241aa4c2c9fe5349481b728321cb36fe017b5"
+    },
+    {
+      "path": "scripts/verify-portfolio.py",
+      "bytes": 3173,
+      "sha256": "3d33e70e1423e07b5f0392ff6bead8460a8fa52250576c086d86244b117aa248"
+    },
+    {
+      "path": "sources/snapshot-provenance.json",
+      "bytes": 6822,
+      "sha256": "57e3d300303c447102ba48fde6e382794e2ab03eca9bad872ad77d43413f98df"
+    },
+    {
+      "path": "tests/test_cartography.py",
+      "bytes": 551,
+      "sha256": "f8d9eb11503ea22ebfdf5cf74e8382920d29ddeae4cb2ecb1807099767e33c2e"
+    },
+    {
+      "path": "tests/test_invariants.py",
+      "bytes": 836,
+      "sha256": "bf85d178848fdb5687676a44cc11a1aa94db191d18cfc8a9eb38e5c0abc4ba7c"
+    },
+    {
+      "path": "tests/test_output_contract.py",
+      "bytes": 5584,
+      "sha256": "79021e33b1ef9e6675d657b84a8637b4d621de86796f6b676b8d44d7d9f83ae9"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 48234,
+      "sha256": "94beb9e8fdd400df57b35e0e92e3687d369ab2c2bf43e174f8f40af3b3aa2461"
+    }
+  ]
+}
