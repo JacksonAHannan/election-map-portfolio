@@ -59,7 +59,7 @@ Completion criteria:
 - [x] Review primary UI guidance and real cartography/data-visualization portfolios; record linked findings in docs/UI_RESEARCH.md.
 - [x] Replace the promotional hero and repeated explanation with direct access to the maps, compact navigation, short factual captions and restrained controls.
 - [x] Keep all 1,114 works, filters/search, shareable URLs, keyboard access, required attribution and map-specific caveats available.
-- [ ] Inspect responsive screenshots, verify browsing and content integrity, publish and check the live site.
+- [x] Inspect responsive screenshots, verify browsing and content integrity, publish and check the live site.
 
 Constraints: change website presentation only. Do not redraw maps, alter their analytical values, drop maps, change fingerprints/IDs or add a framework. Research has one bounded owner; parent owns website edits and verification.
 
@@ -74,3 +74,5 @@ Review against brief: a neutral gallery is appropriate here because the maps alr
 Implementation evidence: selected-work page now opens directly on eight uncropped maps, with compact identity and two navigation choices. Archive controls are reduced to search/geography plus a More filters disclosure with active-filter count. Card text is a short factual caption and compact provider credit, with visible hypothetical/estimated flags where needed. Full credit sentences, source notes, claims and fingerprints remain in the large-view details. Slogan, hero, About copy, category pills and repeated card metadata were removed. Map/catalog bytes were not edited.
 
 The updated browser suite passed against the local site, verifying eight distinct highlights, maps within 200px of the top, all archive browsing/filter/pagination behavior, scenario and estimate caveats, keyboard use, legacy URLs, source disclosure, and 320/390/768/1440px layouts. Screenshots inspected at desktop and mobile sizes. Existing browser assertions were updated where the intentionally changed UI replaces pills with a category select and moves advanced controls into disclosure; their behavior coverage was retained and expanded. Next: final integrity checks and publication.
+
+UI update complete: d28ced8de10bf1df2151e750421d59f0f48dafc7 deployed successfully in GitHub Pages run 44951991002. Live HTML, JavaScript and CSS returned HTTP 200 and matched local committed SHA-256 hashes. The updated complete browser suite passed again against the public site at desktop, tablet and mobile widths, with no JavaScript or HTTP failures. All 16 website tests and the 2,294-file inventory check passed. No map or catalog records were changed. No blocker remains.

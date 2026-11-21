@@ -11206,13 +11206,13 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 7084,
-      "sha256": "a9cf383b5439bf142d04a680c70481f156f35ef01ac9a102c8268d7686a5a8cb"
+      "bytes": 7422,
+      "sha256": "85b858f9aa1141d8c6f98e9f6467963c1e18c3199cd3f26f6dcd646567a37080"
     },
     {
       "path": "docs/WEBSITE_TASK.md",
-      "bytes": 12754,
-      "sha256": "178f6a7698d248671feb6787e09ef023d2b00a24a378ba1f35d7e95b1725ab36"
+      "bytes": 13234,
+      "sha256": "69e75a63bc41b7a98026947e3ff23cbc7ac1f3aed686ff0a85c59bbcbc764977"
     },
     {
       "path": "election_maps/__init__.py",
