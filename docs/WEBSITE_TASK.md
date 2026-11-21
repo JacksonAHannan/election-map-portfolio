@@ -35,7 +35,7 @@ Completion criteria:
 - [x] Reproduce missing split-precinct comparisons; identify a defensible district-specific historical baseline and distinguish observed from estimated values.
 - [x] Fix the source pipeline with focused regression checks, preserve observed vote totals and audit every still-unavailable comparison.
 - [x] Visually review every included render through readable sheets; inspect flagged maps individually and resolve rendering defects within scope.
-- [ ] Regenerate affected renders, import replacements, verify source/published integrity and browser behavior, publish and verify live update.
+- [x] Regenerate affected renders, import replacements, verify source/published integrity and browser behavior, publish and verify live update.
 
 Parallel scope: a read-only split-data diagnosis; visual review of older Alabama collections; visual review of other states/regions. Parent owns current legislative/briefing series, source edits, integration and publication. Review evidence remains local under `.browser-artifacts/`; durable findings go in project documentation.
 
@@ -48,3 +48,5 @@ Importer follow-up: source replacements now preserve existing shared map IDs and
 Accepted corrections: 14 legislative benchmark maps plus two layout fixes are integrated. Seven statewide/congressional context maps were also redrawn during the initial standard rebuild, with unchanged data and additional visual checks. A partially written CD4 SVG from stopping that broad render was regenerated through the actual renderer and revalidated. Both image sizes for all 23 changed sources have changed bytes; existing shared IDs are preserved. One broken studio intermediate is excluded, leaving 1,114 works and 77 collections. Source acceptance compared all observed/historical counts and pre-existing eligible swings against the preserved prior output: unchanged, with exactly 73 newly supported comparisons.
 
 Verification evidence: 31 source comparison/meeting checks passed, 12 affected layout/cartography/atlas checks passed, and all 16 website tests passed. Browser checks against the refreshed local catalog passed at 320/390/768/1440 pixels with no JavaScript or HTTP errors. Next: final manifests, publish and verify the live changed-image fingerprints.
+
+Publication complete: correction commit b5b12fb371a9e2559e4ed8ce357aaf1b69e89851 deployed successfully in GitHub Pages run 44948733576. Live HTML, browser code, both catalog representations and all 23 changed full-size image files returned HTTP 200 with hashes matching the committed files. The complete browser suite also passed against the live public URL. All four correction/review acceptance units are complete; no blocker remains. Documented unavailable data and estimated benchmark assumptions remain visible.
