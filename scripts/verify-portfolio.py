@@ -14,7 +14,7 @@ from PIL import Image
 from election_maps.output_contract import validate_bundle
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist", ".browser-artifacts"}
+EXCLUDED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist", ".browser-artifacts", ".firecrawl"}
 FORBIDDEN_SUFFIXES = {".gpkg", ".shp", ".shx", ".dbf", ".prj", ".cpg", ".zip", ".rar", ".xls", ".xlsx"}
 
 

@@ -1,6 +1,6 @@
 # Election Map Portfolio
 
-Election cartography by Jackson A. Hannan. [Visit the portfolio website](https://jacksonahannan.github.io/election-map-portfolio/) to browse the full collection of precinct results, electoral change, turnout studies, hypothetical scenarios, design variants, and companion charts.
+Election cartography by Jackson A. Hannan. [Visit the portfolio website](https://jacksonahannan.github.io/election-map-portfolio/) for selected election maps and the complete archive.
 
 The searchable website now contains 1,114 unique works across 77 collections. It preserves the original six-map portfolio below, including the original PNGs, source attribution, saved audits and Python reproduction workflows. The additional collection is published as web-sized derivatives, with original paths and SHA-256 fingerprints retained. No raw election tables, source scans, or voter files are included.
 
@@ -8,7 +8,9 @@ The searchable website now contains 1,114 unique works across 77 collections. It
 
 [Map corrections and visual review](docs/MAP_REVIEW.md) documents the split-precinct benchmark correction and full-collection visual inspection.
 
-The buildless site runs directly on GitHub Pages from `main` at the repository root. Search by race, district, state or year; combine geography, collection, year and subject filters; open any image for a larger view and collection source notes. A filtered view and individual map can be shared by URL. Scenarios are labeled as hypothetical.
+The buildless site runs on GitHub Pages from `main` at the repository root. It opens with eight selected maps. **All maps** contains every catalog work, with search and geography controls; collection, year, subject and sorting are under **More filters**. Open a map for the large image and expandable sources/details. Filtered views and map links remain shareable, including links from the previous layout. Scenarios and estimated split-precinct comparisons are labeled.
+
+[UI research and selection rationale](docs/UI_RESEARCH.md) records the primary guidance and portfolio examples used for the simpler layout.
 
 For local preview, run `python -m http.server 8000` from this directory. To refresh from a local Election-Maps archive:
 

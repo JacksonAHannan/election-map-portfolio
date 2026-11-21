@@ -3,40 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#172e47">
-  <meta name="description" content="Election maps by Jackson A. Hannan. Explore precinct results, electoral change, turnout, and hypothetical scenarios, with sources and methods.">
-  <title>Jackson A. Hannan | Election maps</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Election maps by Jackson A. Hannan. Selected work and the full map archive.">
+  <title>Election maps — Jackson A. Hannan</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="data/gallery.js" defer></script>
   <script src="gallery.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#collection">Skip to the maps</a>
+  <a class="skip" href="#collection">Skip to maps</a>
   <header class="masthead wrap">
-    <a class="identity" href="index.html">Jackson A. Hannan<span>Election cartography</span></a>
-    <nav aria-label="Main navigation"><a href="#collection">The collection</a><a href="#about">About the work</a><a href="https://github.com/JacksonAHannan/election-map-portfolio">GitHub</a></nav>
+    <div class="identity">
+      <h1><a href="index.html">Jackson A. Hannan</a></h1>
+      <p>Election maps</p>
+    </div>
+    <nav aria-label="Work">
+      <button id="selected-view" type="button" aria-pressed="true">Selected</button>
+      <button id="archive-view" type="button" aria-pressed="false">All maps</button>
+    </nav>
   </header>
-  <main>
-    <section class="intro wrap" aria-labelledby="intro-title">
-      <div class="intro-copy"><h1 id="intro-title">A closer look<br> at the vote.</h1><p>I’m Jackson. I make maps that explore how places vote, how coalitions change, and what the geography can tell us.</p><p class="intro-detail">Precincts, counties, and districts.<br>Historical elections and new questions.</p><a class="primary-link" href="#collection">Explore the collection</a></div>
-      <figure class="featured"><a id="featured-open" href="outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png"><img id="featured-image" src="outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png" alt="Alabama 2017 Senate special election by precinct" fetchpriority="high"></a><figcaption><span id="featured-caption">Alabama 2017 Senate special election</span><span id="featured-tag">Precinct cartography</span></figcaption></figure>
-    </section>
-    <section id="collection" class="collection wrap" aria-labelledby="collection-title">
-      <div class="collection-heading"><div><h2 id="collection-title">The map collection</h2><p>Results, shifts, turnout, and the work behind the maps.</p></div><p id="archive-count" class="archive-count"></p></div>
-      <form id="filters" role="search" aria-label="Search the map collection">
-        <div class="filter-row"><div class="search-field"><label for="search">Search the collection</label><input id="search" name="q" type="search" placeholder="Try a race, district, state, or year…" autocomplete="off"></div><div><label for="state">Geography</label><select id="state" name="state"><option value="">All geographies</option></select></div><div><label for="series">Collection</label><select id="series" name="series"><option value="">All collections</option></select></div><div><label for="year">Year</label><select id="year" name="year"><option value="">All years</option></select></div></div>
-        <div class="browse-row"><div class="topics" role="group" aria-label="Filter by subject"><button type="button" class="topic active" data-category="" aria-pressed="true">All work</button><button type="button" class="topic" data-category="Election results" aria-pressed="false">Election results</button><button type="button" class="topic" data-category="Electoral change" aria-pressed="false">Electoral change</button><button type="button" class="topic" data-category="Turnout" aria-pressed="false">Turnout</button><button type="button" class="topic" data-category="Scenarios" aria-pressed="false">Scenarios</button><button type="button" class="topic" data-category="Analysis" aria-pressed="false">Analysis</button><button type="button" class="topic" data-category="Design studies" aria-pressed="false">Design studies</button></div><button id="reset" type="button" class="text-button">Clear filters</button></div>
+  <main id="collection" class="wrap">
+    <h2 class="sr-only">Map portfolio</h2>
+    <div id="browse-controls" hidden>
+      <form id="filters" role="search" aria-label="Find a map">
+        <div class="search-field">
+          <label for="search">Search</label>
+          <input id="search" name="q" type="search" placeholder="Race, district, or year" autocomplete="off">
+        </div>
+        <div>
+          <label for="state">Geography</label>
+          <select id="state" name="state"><option value="">All geographies</option></select>
+        </div>
+        <details id="more-filters">
+          <summary id="more-filter-label">More filters</summary>
+          <div class="extra-filters">
+            <div class="wide-field">
+              <label for="series">Collection</label>
+              <select id="series" name="series"><option value="">All collections</option></select>
+            </div>
+            <div>
+              <label for="year">Year</label>
+              <select id="year" name="year"><option value="">All years</option></select>
+            </div>
+            <div>
+              <label for="category">Subject</label>
+              <select id="category">
+                <option value="">All subjects</option>
+                <option>Election results</option>
+                <option>Electoral change</option>
+                <option>Turnout</option>
+                <option>Scenarios</option>
+                <option>Analysis</option>
+                <option>Design studies</option>
+              </select>
+            </div>
+            <div class="wide-field">
+              <label for="sort">Sort</label>
+              <select id="sort">
+                <option value="curated">Selected first</option>
+                <option value="newest">Latest election year</option>
+                <option value="title">Title A–Z</option>
+              </select>
+            </div>
+          </div>
+        </details>
       </form>
-      <div class="results-line"><p id="results-count" role="status" aria-live="polite"></p><label class="sort-label" for="sort">Order<select id="sort"><option value="curated">Featured first</option><option value="newest">Latest election year</option><option value="title">Title A–Z</option></select></label></div>
-      <div id="gallery" class="gallery"></div>
-      <div id="empty" class="empty" hidden><h3>No maps match these filters.</h3><p>Try a different search or clear the filters to see the full collection.</p><button id="empty-reset" type="button">Clear filters</button></div>
-      <div class="load-area"><button id="load-more" type="button">Show more maps</button><p id="page-count"></p></div>
-      <noscript><p>Enable JavaScript to search the full archive. You can still view these original maps:</p><ul><li><a href="outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-2016-2024.png">Alabama presidential swing, 2016–2024</a></li><li><a href="outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png">Tennessee presidential shift, 2016–2024</a></li><li><a href="outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png">Alabama 2017 Senate special election</a></li></ul></noscript>
-    </section>
-    <section id="about" class="about wrap" aria-labelledby="about-title"><div><h2 id="about-title">Every map has<br>a method behind it.</h2><p>I work with election returns and geographic data to make electoral patterns easier to see. This collection brings together precinct maps, historical comparisons, district studies, design experiments, and companion analysis.</p></div><div class="about-notes"><h3>Read the geography carefully</h3><p>Changing precinct boundaries need reconciliation. Missing returns and unmatched areas matter. The source notes attached to each collection describe the assumptions and limitations behind the work.</p><h3>Scenarios are hypothetical</h3><p>Counterfactual and modeled maps explore conditional assumptions. They are labeled as scenarios and should not be read as observed results or forecasts. Aggregate patterns do not identify individual voters.</p><p><a href="https://github.com/JacksonAHannan/election-map-portfolio#readme">Methods and reproduction</a><a href="docs/DATA_SOURCES.md">Sources and attribution</a></p></div></section>
+      <div class="results-line">
+        <p id="results-count" role="status" aria-live="polite"></p>
+        <button id="reset" class="text-button" type="button" hidden>Clear filters</button>
+      </div>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <div id="empty" class="empty" hidden>
+      <p>No maps found.</p>
+      <button id="empty-reset" type="button">Clear filters</button>
+    </div>
+    <div id="load-area" class="load-area" hidden>
+      <button id="load-more" type="button">More maps</button>
+    </div>
+    <noscript>
+      <p>JavaScript is needed to browse the archive. Original maps:</p>
+      <ul>
+        <li><a href="outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png">Alabama Senate special election, 2017</a></li>
+        <li><a href="outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png">Tennessee presidential shift, 2016–2024</a></li>
+        <li><a href="outputs/alabama-1992-2024-presidential-realignment/alabama-presidential-realignment-1992-2024.png">Alabama county realignment, 1992–2024</a></li>
+      </ul>
+    </noscript>
   </main>
-  <footer class="wrap"><p>Jackson A. Hannan<span>Election maps & spatial analysis</span></p><p>Original cartography. Sources credited by collection.<br>Code is MIT licensed; maps retain applicable source terms.</p><a href="https://github.com/JacksonAHannan">Find me on GitHub</a></footer>
-  <dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-toolbar"><div><p id="viewer-category"></p><h2 id="viewer-title"></h2></div><button id="close-viewer" type="button" aria-label="Close map viewer">Close <span aria-hidden="true">×</span></button></div><div class="viewer-canvas"><img id="viewer-image" alt=""></div><div class="viewer-controls"><button id="previous" type="button">Previous map</button><a id="full-image" href="#" target="_blank" rel="noopener">Open large image</a><button id="next" type="button">Next map</button></div><div class="viewer-description"><p id="viewer-collection"></p><p id="viewer-caveat"></p><p id="viewer-credit"></p><details><summary>Sources and methods for this collection</summary><pre id="viewer-notes"></pre></details><p class="source-id" id="viewer-source"></p></div></dialog>
+  <footer class="wrap">
+    <a href="docs/DATA_SOURCES.md">Sources</a>
+    <a href="https://github.com/JacksonAHannan/election-map-portfolio">Code</a>
+  </footer>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-toolbar">
+      <h2 id="viewer-title"></h2>
+      <button id="close-viewer" type="button" aria-label="Close map viewer">Close</button>
+    </div>
+    <div class="viewer-canvas"><img id="viewer-image" alt=""></div>
+    <div class="viewer-controls">
+      <button id="previous" type="button">Previous</button>
+      <a id="full-image" href="#" target="_blank" rel="noopener">Large image</a>
+      <button id="next" type="button">Next</button>
+    </div>
+    <div class="viewer-description">
+      <p id="viewer-caveat" hidden></p>
+      <p id="viewer-credit" hidden></p>
+      <details id="map-details">
+        <summary>Sources and details</summary>
+        <p id="viewer-collection"></p>
+        <p id="viewer-claim"></p>
+        <pre id="viewer-notes"></pre>
+        <p id="viewer-source" class="source-id"></p>
+      </details>
+    </div>
+  </dialog>
 </body>
 </html>

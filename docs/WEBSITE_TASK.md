@@ -50,3 +50,27 @@ Accepted corrections: 14 legislative benchmark maps plus two layout fixes are in
 Verification evidence: 31 source comparison/meeting checks passed, 12 affected layout/cartography/atlas checks passed, and all 16 website tests passed. Browser checks against the refreshed local catalog passed at 320/390/768/1440 pixels with no JavaScript or HTTP errors. Next: final manifests, publish and verify the live changed-image fingerprints.
 
 Publication complete: correction commit b5b12fb371a9e2559e4ed8ce357aaf1b69e89851 deployed successfully in GitHub Pages run 44948733576. Live HTML, browser code, both catalog representations and all 23 changed full-size image files returned HTTP 200 with hashes matching the committed files. The complete browser suite also passed against the live public URL. All four correction/review acceptance units are complete; no blocker remains. Documented unavailable data and estimated benchmark assumptions remain visible.
+
+## Portfolio UI simplification
+
+User request: research sound UI practice and real portfolio examples, remove unnecessary text, and make the site simple and less formulaic.
+
+Completion criteria:
+- [x] Review primary UI guidance and real cartography/data-visualization portfolios; record linked findings in docs/UI_RESEARCH.md.
+- [x] Replace the promotional hero and repeated explanation with direct access to the maps, compact navigation, short factual captions and restrained controls.
+- [x] Keep all 1,114 works, filters/search, shareable URLs, keyboard access, required attribution and map-specific caveats available.
+- [ ] Inspect responsive screenshots, verify browsing and content integrity, publish and check the live site.
+
+Constraints: change website presentation only. Do not redraw maps, alter their analytical values, drop maps, change fingerprints/IDs or add a framework. Research has one bounded owner; parent owns website edits and verification.
+
+Initial audit: the current page repeats the purpose in a large slogan, personal introduction, collection heading/description, long about section and footer. Four main filters, seven category pills and sorting compete with the maps. Cards repeat filename-derived titles, collection names, category, geography/year and full credit sentences. Source and fingerprint details are always visible in the viewer. These are the main reduction targets.
+
+Scope update: the user also requested editorial judgment about which maps to highlight. Add a selected-work opening view and retain the complete archive behind an explicit All maps control. Selection should favor clear electoral stories, strong compositions and a range of geography/scale; it should not simply feature the newest files or a run of near-identical districts.
+
+Design plan after research: white #ffffff page, ink #222222, muted #626262, rule #d6d6d6, focus blue #1f4f8c and surface #f6f6f6. Use Arial/Helvetica for quiet site typography; original map typography remains the distinctive content. Compact owner identity and Selected / All maps navigation above a two-column, uncropped image grid; one column on mobile. All maps exposes search/geography first and secondary controls under More filters. Sources, full descriptions and fingerprints remain in the viewer's details disclosure. No slogan, hero, About essay, ornamental pills or animated entrances.
+
+Review against brief: a neutral gallery is appropriate here because the maps already supply typography, color and detailed compositions. Two columns keep map details larger than a decorative three-column project wall. Eight selected works will show historical change, a major special election, a ballot question, a local race, special-election comparisons and one explicitly hypothetical regional map. Keep captions factual and short, and retain meaningful attribution.
+
+Implementation evidence: selected-work page now opens directly on eight uncropped maps, with compact identity and two navigation choices. Archive controls are reduced to search/geography plus a More filters disclosure with active-filter count. Card text is a short factual caption and compact provider credit, with visible hypothetical/estimated flags where needed. Full credit sentences, source notes, claims and fingerprints remain in the large-view details. Slogan, hero, About copy, category pills and repeated card metadata were removed. Map/catalog bytes were not edited.
+
+The updated browser suite passed against the local site, verifying eight distinct highlights, maps within 200px of the top, all archive browsing/filter/pagination behavior, scenario and estimate caveats, keyboard use, legacy URLs, source disclosure, and 320/390/768/1440px layouts. Screenshots inspected at desktop and mobile sizes. Existing browser assertions were updated where the intentionally changed UI replaces pills with a category select and moves advanced controls into disclosure; their behavior coverage was retained and expanded. Next: final integrity checks and publication.

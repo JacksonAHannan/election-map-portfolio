@@ -42,3 +42,10 @@ Exactly 73 supported split reporting rows were added to the current House/Senate
 The publication update refreshes both image sizes for 23 source renders: 14 corrected legislative maps, two layout corrections, and seven unchanged-data context maps redrawn during the source rebuild. Each changed catalog record was checked against its actual source SHA-256 and both derivatives were compared with the preceding committed bytes. All retained works keep their existing shareable IDs. Source-version query parameters invalidate stale previews. The refreshed local site passed the complete desktop/mobile Playwright check with no JavaScript or HTTP errors.
 
 The correction was published in b5b12fb, GitHub Pages run 44948733576 (successful build and deployment). A live hash check verified 27 public files, including all 23 changed full-size maps plus HTML, browser code and both catalog representations. The complete Playwright suite passed again against the live public URL at desktop, tablet and mobile widths with no JavaScript or failed HTTP responses.
+
+
+## Portfolio presentation update
+
+The UI was simplified using the primary guidance and portfolio observations recorded in [UI_RESEARCH.md](UI_RESEARCH.md). The default view now shows eight editorially selected works; All maps retains all 1,114 catalog works. `git diff --name-only -- assets data outputs` returned no changes: map pixels, catalog records, source fingerprints and IDs are unchanged by this update.
+
+All 16 website tests passed. The updated Playwright suite passed at 320, 390, 768 and 1440 pixels. It checks eight distinct selected maps, the first map beginning within 200px of the viewport top, archive pagination, combined and disclosed filters, visible active-filter count, empty/reset states, source disclosure, scenario/estimated caveats, keyboard controls and both legacy query/direct map URLs. Screenshots were inspected at desktop and mobile sizes. JavaScript syntax and whitespace checks passed. The public-inventory checker now excludes ignored Firecrawl research evidence consistently with the manifest generator.

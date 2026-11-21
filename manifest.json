@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8532,
-      "sha256": "1f39415302c16c10a9f11677cabe0ed67d012ed151d65f99690dc84453f1f305"
+      "bytes": 8707,
+      "sha256": "aade89b904db05c98c2057a87ff27dc606c9f788c261174bb38e5a65765d587a"
     },
     {
       "path": "assets/favicon.svg",
@@ -11200,14 +11200,19 @@
       "sha256": "9a18abba41b89d025ade9a0e25b3359df86506ce3968c69987ec28975c3dab0d"
     },
     {
+      "path": "docs/UI_RESEARCH.md",
+      "bytes": 6770,
+      "sha256": "261bf4705357a79fc73c767eea6c758401f526680ce730ae68175163727fe876"
+    },
+    {
       "path": "docs/VERIFICATION.md",
-      "bytes": 6042,
-      "sha256": "d4e4e23baf89c19ec20f7c2e6bb4fd40d602de181ab0f006dc72ff3cc4da9e5e"
+      "bytes": 7084,
+      "sha256": "a9cf383b5439bf142d04a680c70481f156f35ef01ac9a102c8268d7686a5a8cb"
     },
     {
       "path": "docs/WEBSITE_TASK.md",
-      "bytes": 8737,
-      "sha256": "b2bbb67601c18c28f4f5f2fa3713ca741238bf7aeddbf94f6df7f541c9571082"
+      "bytes": 12754,
+      "sha256": "178f6a7698d248671feb6787e09ef023d2b00a24a378ba1f35d7e95b1725ab36"
     },
     {
       "path": "election_maps/__init__.py",
@@ -11231,13 +11236,13 @@
     },
     {
       "path": "gallery.js",
-      "bytes": 9041,
-      "sha256": "d589560ee13b0eb12d3bf6b0caa5102489afdb82b418a692df0cb1d09b69dede"
+      "bytes": 12230,
+      "sha256": "9aeb41b24d61275e1765b93eea996d0f62ece4b2577447d9002e8dea24a974e4"
     },
     {
       "path": "index.html",
-      "bytes": 7511,
-      "sha256": "09e8ee6695f701955f3f6934c5e72c638cde11a2cecdb6fb015c405662ba9298"
+      "bytes": 5235,
+      "sha256": "944acde5b4c9763e88de3fcf626630b12520ce26c5af0416bd9ef4b2de85e2ca"
     },
     {
       "path": "outputs/alabama-1992-2024-presidential-realignment/README.md",
@@ -11426,8 +11431,8 @@
     },
     {
       "path": "scripts/verify-portfolio.py",
-      "bytes": 4710,
-      "sha256": "fde328d4e7fab9a4eeb542e6285da5c16bfee4b884644b004db733987610fc74"
+      "bytes": 4724,
+      "sha256": "1c4fac5f39a6bfcdfb13364f34ca6aa57363c4542b501bca209c5bf4bfbae899"
     },
     {
       "path": "sources/snapshot-provenance.json",
@@ -11436,13 +11441,13 @@
     },
     {
       "path": "styles.css",
-      "bytes": 10351,
-      "sha256": "6e7d248331c8ccc8c3c0e84fff9fdaa0e75601a66a40290afa50c090c1843fb5"
+      "bytes": 7007,
+      "sha256": "147f1c67c1500dfdc7a3256d388d29a852bb558df281f79d39b272f58fe3727e"
     },
     {
       "path": "tests/browser_gallery.py",
-      "bytes": 4510,
-      "sha256": "9948cf71fb0718e0b562171147bfd980c486d9cbe5af9288226fd31fd507c26a"
+      "bytes": 6869,
+      "sha256": "e819f0b4b2d78c66a254f8356a3c5b00dbaa8bbe9badf97c59a00297bb56d3fc"
     },
     {
       "path": "tests/test_cartography.py",
