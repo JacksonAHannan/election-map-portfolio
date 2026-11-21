@@ -9,7 +9,7 @@ Completion criteria:
 - [x] Import all eligible renders reproducibly with web previews and source metadata; account for every excluded file.
 - [x] Build responsive searchable gallery, filters, pagination, accessible image viewer, sources and direct image links.
 - [x] Verify inventory completeness, image integrity, existing tests, desktop/mobile and keyboard browser behavior.
-- [ ] Commit/push the authorized website update; enable GitHub Pages and verify live deployment.
+- [x] Commit/push the authorized website update; enable GitHub Pages and verify live deployment.
 
 Design: map-led collection, white canvas, blue ink #172e47, slate #526477, pale blue #f0f4f7, blue #216485, muted red #b5434d. Georgia display type with Trebuchet MS/system sans-serif body. Left-aligned heading and intro beside a large Southern precinct map; quiet navigation and a full-width filterable image wall below. Use red/blue only sparingly in the site chrome so the maps carry their own palettes. Avoid ornamental map graphics and decorative statistics.
 
@@ -21,4 +21,8 @@ Import evidence: 1,115 unique works in 77 collections; 1,122 eligible raster inp
 
 Verification: existing 14 tests passed. Browser checks passed for combined filters, pagination, empty states, scenario labels, keyboard navigation, direct map links and layouts at 320/390/768/1440 pixels. The first browser run overlapped the import, so repeat it against the completed catalog. Initial inventory check caught local screenshot artifacts being included; add `.browser-artifacts` to both inventory scripts and rerun. This preserves the six-original-PNG contract.
 
-Verification follow-up: the file-link check rejected the valid directory homepage link; the homepage now uses explicit `index.html`. Visual mobile review caught a missing space where the desktop heading line break was hidden; fixed the markup. Final integrity verification passed for 2,293 public files, all image derivatives and original bundles. Browser checks were repeated against the completed 1,115-work catalog and corrected markup. JavaScript syntax and whitespace checks passed. Next: commit/push and enable GitHub Pages, then verify live deployment. GitHub connector lacks Pages configuration and binary tree synchronization; use the authenticated local GitHub CLI for these operations.
+Verification follow-up: the file-link check rejected the valid directory homepage link; the homepage now uses explicit `index.html`. Visual mobile review caught a missing space where the desktop heading line break was hidden; fixed the markup. Final integrity verification passed for 2,293 public files, all image derivatives and original bundles. Browser checks were repeated against the completed 1,115-work catalog and corrected markup. JavaScript syntax and whitespace checks passed. Publication complete: source pushed to `main` at b59ca44; GitHub Pages enabled from the repository root. Build and deployment run 44946748469 completed successfully. Live HTML, JavaScript, styles and catalog returned HTTP 200 with hashes matching the committed files. The complete browser check also passed against the public GitHub Pages URL. Repository homepage now links to the website. GitHub connector lacks Pages configuration and binary tree synchronization; use the authenticated local GitHub CLI for these operations.
+
+Live website: https://jacksonahannan.github.io/election-map-portfolio/
+
+Status: complete. No blockers. Source-documentation gaps remain explicitly visible by collection; analytical models were not rerun.

@@ -29,3 +29,5 @@ Validation for this update:
 - Desktop and mobile screenshots inspected locally; `.browser-artifacts/` is ignored and excluded from publication inventory.
 
 These checks verify publication integrity and browsing behavior. They do not rerun analytical models, certify externally supplied election results, or resolve source-documentation gaps. Source notes and hypothetical-scenario labels remain visible in the gallery.
+
+Publication verified at https://jacksonahannan.github.io/election-map-portfolio/. GitHub Pages build/deploy run 44946748469 succeeded for b59ca44. Live HTML, CSS, JavaScript and gallery catalog matched local SHA-256 hashes. The complete browser check above also passed against the public URL with no JavaScript or failed HTTP responses.
