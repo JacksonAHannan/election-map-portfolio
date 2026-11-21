@@ -4,6 +4,7 @@
   if (!data) { document.querySelector('#results-count').textContent = 'The collection could not load. Please refresh the page.'; return; }
   const $ = (id) => document.getElementById(id);
   const collections = new Map(data.collections.map(c => [c.id, c]));
+  const imageURL = (m, key = 'image') => `${m[key]}?v=${m.source_sha256.slice(0, 12)}`;
   const filters = ['search', 'state', 'series', 'year'];
   const pageSize = 30;
   let category = '', limit = pageSize, filtered = [], current = null;
@@ -20,8 +21,8 @@
   $('archive-count').textContent = `${data.images.length.toLocaleString()} works in ${data.collections.length} collections`;
   const featured = data.images.find(m => m.collection === 'southern-nine-state-2026-midterm-clean');
   if (featured) {
-    $('featured-image').src = featured.image; $('featured-image').alt = 'Hypothetical nine-state Southern midterm scenario by precinct';
-    $('featured-open').href = featured.image; $('featured-caption').textContent = 'The South, precinct by precinct'; $('featured-tag').textContent = 'Hypothetical scenario';
+    $('featured-image').src = imageURL(featured); $('featured-image').alt = 'Hypothetical nine-state Southern midterm scenario by precinct';
+    $('featured-open').href = imageURL(featured); $('featured-caption').textContent = 'The South, precinct by precinct'; $('featured-tag').textContent = 'Hypothetical scenario';
     $('featured-open').addEventListener('click', e => { e.preventDefault(); openMap(featured); });
   }
   function syncURL() {
@@ -33,8 +34,8 @@
   }
   function makeCard(m) {
     const col = collections.get(m.collection), article = document.createElement('article'); article.className = 'map-card';
-    const a = document.createElement('a'); a.className = 'map-link'; a.href = m.image; a.setAttribute('aria-label', 'View '+m.title);
-    const img = document.createElement('img'); img.src = m.thumbnail; img.alt = m.title; img.loading = 'lazy'; img.decoding = 'async'; img.width = m.width; img.height = m.height; a.append(img);
+    const a = document.createElement('a'); a.className = 'map-link'; a.href = imageURL(m); a.setAttribute('aria-label', 'View '+m.title);
+    const img = document.createElement('img'); img.src = imageURL(m, 'thumbnail'); img.alt = m.title; img.loading = 'lazy'; img.decoding = 'async'; img.width = m.width; img.height = m.height; a.append(img);
     a.addEventListener('click', e => { e.preventDefault(); openMap(m); });
     const meta = document.createElement('p'); meta.className = 'map-meta';
     const state = document.createElement('span'); state.textContent = m.state + (m.years.length ? ' / '+m.years.join('–') : '');
@@ -69,7 +70,7 @@
   function openMap(m) {
     current = m; const col = collections.get(m.collection);
     $('viewer-title').textContent = m.title; $('viewer-category').textContent = m.category + ' / '+m.state;
-    $('viewer-image').src = m.image; $('viewer-image').alt = m.title; $('full-image').href = m.image;
+    $('viewer-image').src = imageURL(m); $('viewer-image').alt = m.title; $('full-image').href = imageURL(m);
     $('viewer-collection').textContent = col.title + (m.variant ? ' / '+m.variant : '');
     $('viewer-caveat').textContent = m.category === 'Scenarios' ? 'Hypothetical scenario. Conditional model assumptions; not observed results or a forecast.' : col.claim;
     $('viewer-credit').replaceChildren();

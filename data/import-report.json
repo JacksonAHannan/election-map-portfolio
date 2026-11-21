@@ -1,6 +1,6 @@
 {
-  "eligible_rasters": 1122,
-  "unique_images": 1115,
+  "eligible_rasters": 1121,
+  "unique_images": 1114,
   "collections": 77,
   "excluded": [
     {
@@ -898,6 +898,10 @@
     {
       "path": "outputs/southern-demographic-swings/cook-style/reference/cpr-table.jpeg",
       "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "political-map-studio/output/browser-verified.png",
+      "reason": "Broken intermediate studio render with four empty inset frames; completed sibling renders are included"
     }
   ],
   "identical_duplicates": [
@@ -931,5 +935,5 @@
     }
   ],
   "duplicate_count": 7,
-  "svg_alternates_not_copied": 678
+  "svg_alternates_not_copied": 699
 }

@@ -2,9 +2,11 @@
 
 Election cartography by Jackson A. Hannan. [Visit the portfolio website](https://jacksonahannan.github.io/election-map-portfolio/) to browse the full collection of precinct results, electoral change, turnout studies, hypothetical scenarios, design variants, and companion charts.
 
-The searchable website now contains 1,115 unique works across 77 collections. It preserves the original six-map portfolio below, including the original PNGs, source attribution, saved audits and Python reproduction workflows. The additional collection is published as web-sized derivatives, with original paths and SHA-256 fingerprints retained. No raw election tables, source scans, or voter files are included.
+The searchable website now contains 1,114 unique works across 77 collections. It preserves the original six-map portfolio below, including the original PNGs, source attribution, saved audits and Python reproduction workflows. The additional collection is published as web-sized derivatives, with original paths and SHA-256 fingerprints retained. No raw election tables, source scans, or voter files are included.
 
 ## Website
+
+[Map corrections and visual review](docs/MAP_REVIEW.md) documents the split-precinct benchmark correction and full-collection visual inspection.
 
 The buildless site runs directly on GitHub Pages from `main` at the repository root. Search by race, district, state or year; combine geography, collection, year and subject filters; open any image for a larger view and collection source notes. A filtered view and individual map can be shared by URL. Scenarios are labeled as hypothetical.
 
@@ -17,7 +19,7 @@ uv run python scripts/verify-portfolio.py
 uv run pytest -q
 ```
 
-`data/import-report.json` accounts for eligible renders, identical duplicates, excluded source/support images, and SVG alternatives. `data/gallery.json` retains source identity and collection notes; `data/gallery.js` is the same data for the browser. Web derivatives use a maximum 3,000-pixel edge plus 760-pixel thumbnails. The archive remains unchanged. Regenerate rather than hand-edit these files. Python workflows use GeoPandas, pandas, NumPy and Matplotlib.
+`data/import-report.json` accounts for eligible renders, identical duplicates, excluded source/support images, and SVG alternatives. `data/gallery.json` retains source identity and collection notes; `data/gallery.js` is the same data for the browser. Web derivatives use a maximum 3,000-pixel edge plus 760-pixel thumbnails. The importer leaves the source archive unchanged. Regenerate rather than hand-edit these files. Python workflows use GeoPandas, pandas, NumPy and Matplotlib.
 
 [Browse the image gallery](index.html) · [Reproduction guide](docs/REPRODUCING.md) · [Sources and limitations](docs/DATA_SOURCES.md)
 

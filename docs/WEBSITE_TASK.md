@@ -26,3 +26,25 @@ Verification follow-up: the file-link check rejected the valid directory homepag
 Live website: https://jacksonahannan.github.io/election-map-portfolio/
 
 Status: complete. No blockers. Source-documentation gaps remain explicitly visible by collection; analytical models were not rerun.
+
+## Map correction and visual review (November 21, 2026)
+
+User request: fix missing swing on split precincts in the latest House/Senate maps, and visually inspect the included maps for stray lines and unfilled precincts. This authorizes targeted corrections to source renderers and replacement of affected public derivatives; preserve unrelated existing source changes and raw inputs.
+
+Completion criteria:
+- [x] Reproduce missing split-precinct comparisons; identify a defensible district-specific historical baseline and distinguish observed from estimated values.
+- [x] Fix the source pipeline with focused regression checks, preserve observed vote totals and audit every still-unavailable comparison.
+- [x] Visually review every included render through readable sheets; inspect flagged maps individually and resolve rendering defects within scope.
+- [ ] Regenerate affected renders, import replacements, verify source/published integrity and browser behavior, publish and verify live update.
+
+Parallel scope: a read-only split-data diagnosis; visual review of older Alabama collections; visual review of other states/regions. Parent owns current legislative/briefing series, source edits, integration and publication. Review evidence remains local under `.browser-artifacts/`; durable findings go in project documentation.
+
+Diagnosis and correction: reproduced 73 missing finite D/R comparisons with valid whole-precinct continuity. Exact historical split-district presidential returns are unavailable; the smallest defensible correction uses explicitly labeled whole-precinct benchmarks for 49 House and 24 Senate reporting rows across 14 maps. No observed or historical vote count changes. The actual source policy and geometry-clipping path have 12 regression checks (red before helper, green after). Existing revised-data checks also pass. Broader rendering was stopped after refreshing audited data and seven unchanged statewide/congressional maps; a bounded invocation of the actual source functions regenerated the 14 affected maps from those audited outputs.
+
+Visual coverage: merged per-image review records account for all 1,115 original catalog IDs, with no missing IDs. Parent inspected 316 IDs (including 20 overlap with the swing review), Alabama reviewer 414, other-state/swing reviewer 405. Suspects were enlarged; corrected legislative maps were rechecked. Confirmed visual findings: broken studio intermediate excluded; Madison atlas and SD25 primary text collisions assigned for correction. Documented missing data and real district/coastal shapes are retained.
+
+Importer follow-up: source replacements now preserve existing shared map IDs and force both preview sizes to refresh. Source fingerprints in image URLs prevent stale cached renders. Two focused importer tests pass. Next: integrate the two layout renders, refresh source bundle manifests, import corrected derivatives and run publication verification.
+
+Accepted corrections: 14 legislative benchmark maps plus two layout fixes are integrated. Seven statewide/congressional context maps were also redrawn during the initial standard rebuild, with unchanged data and additional visual checks. A partially written CD4 SVG from stopping that broad render was regenerated through the actual renderer and revalidated. Both image sizes for all 23 changed sources have changed bytes; existing shared IDs are preserved. One broken studio intermediate is excluded, leaving 1,114 works and 77 collections. Source acceptance compared all observed/historical counts and pre-existing eligible swings against the preserved prior output: unchanged, with exactly 73 newly supported comparisons.
+
+Verification evidence: 31 source comparison/meeting checks passed, 12 affected layout/cartography/atlas checks passed, and all 16 website tests passed. Browser checks against the refreshed local catalog passed at 320/390/768/1440 pixels with no JavaScript or HTTP errors. Next: final manifests, publish and verify the live changed-image fingerprints.

@@ -46,3 +46,8 @@ The gallery includes generated raster renders from the main Election-Maps public
 Collection source notes are preserved in `data/gallery.json` and available through each map viewer. Source-provider attribution is displayed beside images whose notes identify RDH/VEST. Attributions embedded in the original composition remain visible. Where collection documentation was absent, the viewer states that gap; no source certification is inferred. Historical and original briefing versions may differ; their separate collection identities are preserved.
 
 WebP files are display derivatives, not replacements for original analytical artifacts. Each record stores the original render path, bytes, SHA-256, dimensions, and derivative dimensions. The original six PNGs are unchanged. Raw source data and oversized vector exports remain in the private local source archive; the website does not expose that repository or imply it is publicly accessible.
+
+
+## Split-precinct comparison correction
+
+The current revised Alabama general-election collection labels split House/Senate comparisons as estimated changes against a continuous whole-precinct 2024 presidential benchmark. Exact 2024 district-fragment returns are unavailable. Whole-precinct historical margins are contextual benchmarks, assuming uniform historical margin inside each split precinct; they are not observed same-electorate swings. Observed 2026 district counts and historical vote totals are preserved. See [the map review](MAP_REVIEW.md) for affected districts, verification and the visual-review scope.

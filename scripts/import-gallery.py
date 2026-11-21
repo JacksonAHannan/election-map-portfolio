@@ -12,6 +12,10 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 RASTER = {'.png', '.jpg', '.jpeg', '.webp'}
 EXCLUDE = {'raw', 'vendor', 'screenshots', 'dogfood-output', 'header-review', 'manual-numeric-review', 'fragment-context-review', '__pycache__', 'qa', 'assets', 'slides', 'reference'}
+EXCLUDED_RENDERS = {
+    'political-map-studio/output/browser-verified.png':
+        'Broken intermediate studio render with four empty inset frames; completed sibling renders are included',
+}
 STATES = ['Alabama','Alaska','Arkansas','Florida','Georgia','Kansas','Louisiana','Mississippi','North Carolina','Pennsylvania','South Carolina','Tennessee','Texas','Virginia','Wisconsin','Wyoming']
 
 def humanize(value):
@@ -38,6 +42,10 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archive',type=Path,required=True)
     args=parser.parse_args(); archive=args.archive.resolve()
+    previous_path = ROOT / 'data/gallery.json'
+    previous = (json.loads(previous_path.read_text())['images']
+                if previous_path.exists() else [])
+    previous_by_path = {record['source_path']: record for record in previous}
     candidates=sorted(p for p in (archive/'outputs').rglob('*') if p.is_file() and p.suffix.lower() in RASTER)
     candidates += sorted(p for p in (archive/'political-map-studio'/'output').rglob('*') if p.is_file() and p.suffix.lower() in RASTER)
     # Published original broadsheet is an additional render absent from the main archive.
@@ -46,6 +54,8 @@ def main():
     for path in candidates:
         local=path.is_relative_to(ROOT)
         rel=path.relative_to(ROOT if local else archive)
+        if str(rel) in EXCLUDED_RENDERS:
+            excluded.append({'path':str(rel),'reason':EXCLUDED_RENDERS[str(rel)]});continue
         if any(part in EXCLUDE for part in rel.parts):
             excluded.append({'path':str(rel),'reason':'Raw source or non-publication support image'});continue
         digest=hashlib.sha256(path.read_bytes()).hexdigest()
@@ -78,18 +88,22 @@ def main():
         if re.fullmatch(r'(?:governor|cd\d+|hd\d+|sd\d+|us-senate|[\w-]+-(?:result|swing))',path.stem) or len(name)<22:
             name=humanize(path.stem)+' · '+col['title']
         variant=' / '.join(humanize(s) for s in rel.parts[2:-1])
-        records.append({'id':digest[:16],'title':name,'collection':slug,'state':state,'years':years,'category':category(rel),'source_path':str(rel),'source_sha256':digest,'source_bytes':path.stat().st_size,'variant':variant,'image':f'assets/maps/{digest[:16]}.webp','thumbnail':f'assets/thumbs/{digest[:16]}.webp','_path':path})
+        prior = previous_by_path.get(str(rel))
+        image_id = prior['id'] if prior else digest[:16]
+        refresh = prior is not None and prior['source_sha256'] != digest
+        records.append({'id':image_id,'title':name,'collection':slug,'state':state,'years':years,'category':category(rel),'source_path':str(rel),'source_sha256':digest,'source_bytes':path.stat().st_size,'variant':variant,'image':f'assets/maps/{image_id}.webp','thumbnail':f'assets/thumbs/{image_id}.webp','_path':path,'_refresh':refresh})
     for directory in ['assets/maps','assets/thumbs','data']:(ROOT/directory).mkdir(parents=True,exist_ok=True)
     def convert(record):
         path=record.pop('_path')
+        refresh=record.pop('_refresh')
         with Image.open(path) as source:
             im=ImageOps.exif_transpose(source).convert('RGB')
             record['original_width'],record['original_height']=im.size
             full=im.copy();full.thumbnail((3000,3000),Image.Resampling.LANCZOS)
             record['width'],record['height']=full.size
             target=ROOT/record['image'];thumb=ROOT/record['thumbnail']
-            if not target.exists():full.save(target,'WEBP',quality=90,method=4)
-            if not thumb.exists():
+            if refresh or not target.exists():full.save(target,'WEBP',quality=90,method=4)
+            if refresh or not thumb.exists():
                 im.thumbnail((760,760),Image.Resampling.LANCZOS);im.save(thumb,'WEBP',quality=83,method=4)
         return record
     with ThreadPoolExecutor(max_workers=6) as pool:records=list(pool.map(convert,records))

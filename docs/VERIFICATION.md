@@ -31,3 +31,12 @@ Validation for this update:
 These checks verify publication integrity and browsing behavior. They do not rerun analytical models, certify externally supplied election results, or resolve source-documentation gaps. Source notes and hypothetical-scenario labels remain visible in the gallery.
 
 Publication verified at https://jacksonahannan.github.io/election-map-portfolio/. GitHub Pages build/deploy run 44946748469 succeeded for b59ca44. Live HTML, CSS, JavaScript and gallery catalog matched local SHA-256 hashes. The complete browser check above also passed against the public URL with no JavaScript or failed HTTP responses.
+
+
+## Post-review map corrections
+
+The full visual screening covered all 1,115 originally published catalog IDs using contact sheets and enlarged inspection of suspects. Corrected split-precinct maps were reviewed again after rendering. One broken studio intermediate was excluded; the updated catalog has 1,114 works in 77 collections. See [MAP_REVIEW.md](MAP_REVIEW.md) for scope and limitations.
+
+Exactly 73 supported split reporting rows were added to the current House/Senate comparison maps as explicitly estimated whole-precinct historical benchmarks. An independent before/after check confirmed unchanged observed and historical vote counts, result-fill masks, and previously eligible swings. The focused comparison/meeting suites passed 31 checks; affected layout/cartography/atlas suites passed 12 checks. Website tests passed all 16 checks, including two new importer regressions.
+
+The publication update refreshes both image sizes for 23 source renders: 14 corrected legislative maps, two layout corrections, and seven unchanged-data context maps redrawn during the source rebuild. Each changed catalog record was checked against its actual source SHA-256 and both derivatives were compared with the preceding committed bytes. All retained works keep their existing shareable IDs. Source-version query parameters invalidate stale previews. The refreshed local site passed the complete desktop/mobile Playwright check with no JavaScript or HTTP errors.
