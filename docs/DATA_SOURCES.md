@@ -36,4 +36,13 @@ Specific dataset landing URLs and full original license records were not present
 
 **2026 Alabama CD5 runoff:** the original broadsheet uses reviewed results and reconstructed 2026 reporting geography on a 2024 base, not certified 2026 election boundaries. It maps 20,835 election-day votes across 202 voting geometries. Official totals include absentee/provisional votes and sum to 21,295. Five geometries have no recorded district candidate votes; those are visibly hatched. No votes are assigned to omitted areas.
 
-Geographic change does not identify individual voter transitions or establish causes. Maps describe aggregate electoral patterns; they are not forecasts.
+Geographic change does not identify individual voter transitions or establish causes. Maps describe aggregate electoral patterns. Hypothetical and modeled maps in the expanded gallery are conditional scenarios, not forecasts or observed election results.
+
+
+## Expanded website collection (November 2026)
+
+The gallery includes generated raster renders from the main Election-Maps publication output directories and studio exports, plus the six original portfolio PNGs. It includes district series, historical and 2026 results, turnout, companion analytical charts, and earlier design variants. Exact duplicate bytes are collapsed. SVG versions are represented by their raster counterparts; source scans, vendor icons and browser captures are excluded. See `data/import-report.json` for the complete accounting.
+
+Collection source notes are preserved in `data/gallery.json` and available through each map viewer. Source-provider attribution is displayed beside images whose notes identify RDH/VEST. Attributions embedded in the original composition remain visible. Where collection documentation was absent, the viewer states that gap; no source certification is inferred. Historical and original briefing versions may differ; their separate collection identities are preserved.
+
+WebP files are display derivatives, not replacements for original analytical artifacts. Each record stores the original render path, bytes, SHA-256, dimensions, and derivative dimensions. The original six PNGs are unchanged. Raw source data and oversized vector exports remain in the private local source archive; the website does not expose that repository or imply it is publicly accessible.

@@ -1,0 +1,935 @@
+{
+  "eligible_rasters": 1122,
+  "unique_images": 1115,
+  "collections": 77,
+  "excluded": [
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/lo-render/slide-16.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/meeting-contact-1.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/meeting-contact-2.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/meeting-contact-3.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/meeting-contact-4.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/reader-desktop.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/qa/reader-mobile.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/01.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/02.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/03.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/04.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/05.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/06.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/07.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/08.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/09.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/10.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/11.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/12.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/13.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/14.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/15.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/16.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/17.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/18.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/19.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/20.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/21.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/22.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/23.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/24.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/25.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/26.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/27.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/28.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/29.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/30.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/31.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/32.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/33.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/34.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/35.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/36.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/37.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/38.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/39.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/40.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/41.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting/slides/42.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/atlas-contact-1.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/atlas-contact-2.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/atlas-contact-3.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/atlas-contact-4.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/atlas-contact-5.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/meeting-contact-1.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/meeting-contact-2.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/meeting-contact-3.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/reader-desktop.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/qa/reader-mobile.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/01.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/02.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/03.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/09.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/10.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/11.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/18.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/19.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/22.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/23.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/24.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/25.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/26.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/27.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/28.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/29.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/alabama-2026-jackson-meeting-revised/slides/30.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-age-matrices-20pct-excluding-tx-fl-2026-11-12/assets/cook-logo.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-age-matrices-excluding-tx-fl-2026-11-12/assets/cook-logo.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-age-matrices-excluding-tx-fl-2026-11-12/qa/document-width-white-swing.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-age-matrices-supported-bands-excluding-tx-fl-2026-11-12/assets/cook-logo.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-application-unified-2026-11-12/assets/cook-logo.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-application-unified-2026-11-12/qa/browser-all-six.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-application-unified-2026-11-12/qa/pdf-02-age-white-swing.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-application-unified-2026-11-12/qa/pdf-05-age-black-retention.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-application-unified-2026-11-12/qa/pdf-06-southern-midterm-counterfactual.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/assets/cook-logo.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/qa/01-contest-vote-retention-document-width.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/qa/02-democratic-gains-by-age-document-width.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/qa/03-young-white-vs-younger-black-document-width.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/qa/04-retention-within-states-document-width.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/cook-essay-comparison-charts-2026-11-12/qa/svg-browser-preview.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/madison-2026-general-atlas/qa/reader-desktop.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/madison-2026-general-atlas/qa/reader-mobile.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/2024-Adams-p1.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/Hinds2026-02.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/Hinds2026-03.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Adams-002-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Adams-003-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Adams-004-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Adams-005-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-002-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-003-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-004-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-005-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-006-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-007-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-008-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-009-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-010-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-011-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-012-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-013-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-014-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-015-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-016-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-017-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-018-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-019-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-020-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-021-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-022-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-023-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-024-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-025-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-026-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-027-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-028-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-029-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-030-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-031-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-032-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-033-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-034-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-035-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-036-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-037-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-038-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-039-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-040-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-041-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-042-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-043-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-044-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-045-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-046-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-047-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-048-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-049-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-050-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Hinds-051-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-002-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-003-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-004-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-005-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-006-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-007-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-008-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-009-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-010-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-011-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-012-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-013-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-014-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-015-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/header-review/Madison-016-headers.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-00.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-01.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-02.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-03.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-04.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-05.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-06.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-07.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-08.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-09.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-10.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-11.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-12.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-13.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-14.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-15.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-16.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-17.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-18.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-19.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-20.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-21.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-22.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-23.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-24.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-25.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-26.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-27.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-28.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-29.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-30.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-31.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-32.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-33.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-34.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-35.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-36.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-37.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-38.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-39.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-40.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-41.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-42.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-43.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-44.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-45.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-46.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-47.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-48.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-49.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/case-50.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-1.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-2.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-3.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-4.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-5.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/mississippi-2026-explorer-geography/raw/numeric-review/panel-6.png",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/southern-demographic-swings/cook-style/reference/cpr-homepage.jpeg",
+      "reason": "Raw source or non-publication support image"
+    },
+    {
+      "path": "outputs/southern-demographic-swings/cook-style/reference/cpr-table.jpeg",
+      "reason": "Raw source or non-publication support image"
+    }
+  ],
+  "identical_duplicates": [
+    {
+      "path": "political-map-studio/output/final-cli.png",
+      "same_as": "political-map-studio/output/example.png"
+    },
+    {
+      "path": "outputs/alabama-1992-2024-presidential-realignment/alabama-presidential-realignment-1992-2024.png",
+      "same_as": "outputs/alabama-1992-2024-presidential-realignment/alabama-presidential-realignment-1992-2024.png"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-2016-2024.png",
+      "same_as": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-2016-2024.png"
+    },
+    {
+      "path": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-crosswalk-quality.png",
+      "same_as": "outputs/alabama-2016-2024-presidential-swing/alabama-presidential-swing-crosswalk-quality.png"
+    },
+    {
+      "path": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png",
+      "same_as": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png"
+    },
+    {
+      "path": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.png",
+      "same_as": "outputs/alabama-cd5-2026-democratic-primary/original-broadsheet/alabama-cd5-2026-democratic-runoff-broadsheet.png"
+    },
+    {
+      "path": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png",
+      "same_as": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png"
+    }
+  ],
+  "duplicate_count": 7,
+  "svg_alternates_not_copied": 678
+}

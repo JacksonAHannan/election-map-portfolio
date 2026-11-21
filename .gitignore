@@ -26,3 +26,5 @@ outputs/**/*.pdf
 !.env.example
 .firecrawl/
 .cache/
+# Browser verification artifacts are local evidence.
+.browser-artifacts/
